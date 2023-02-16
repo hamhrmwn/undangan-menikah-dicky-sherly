@@ -43,6 +43,7 @@
   <audio controls autoplay hidden>
     <source src="play.mp3" type="audio/mpeg">
   </audio>
+  <link type="text/css" rel="stylesheet" media="screen" href="css/jquery-sakura.min.css" />
 </head>
 
 <body>
@@ -268,7 +269,7 @@
       </div>
       <div class="space40px"></div>
       <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-        <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NzF1cjRvbXBocXRtbmJsbTVqcDBzcWpib3EgZGlja3lzZXRpYWt1MjhAbQ&tmsrc=dickysetiaku28%40gmail.com"
+        <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NWZuajYwMXFtaG40ZTZ1Z3ExZ3FpdWRmdGEgaWxoYW1uMTQuYTd4QG0&tmsrc=ilhamn14.a7x%40gmail.com"
           target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank"
           data-aos="zoom-in">
           <i class="far fa-calendar-plus"></i>
@@ -286,7 +287,7 @@
           <p class="tempat is-larger has-text-centered">
             <strong>Rumah kediaman calon mempelai wanita</strong>
             <br>
-            Jatiseeng Kidul
+            Desa Jatiseeng Kidul
             <br>
             Kec. Ciledug, Kab. Cirebon, Jawa Barat
             <br>
@@ -295,7 +296,7 @@
         <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.844025514947!2d108.7410598!3d-6.909246400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f08ebdc3b7707%3A0x71f343676d23643!2sGg.%20Kemiri%2C%20Jatiseeng%20Kidul%2C%20Kec.%20Ciledug%2C%20Kabupaten%20Cirebon%2C%20Jawa%20Barat%2045188!5e0!3m2!1sid!2sid!4v1676483858696!5m2!1sid!2sid"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="450" style="border-radius: 12px;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="space40px"></div>
@@ -410,23 +411,21 @@
           </div>
           <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
             <p class="h2 subtitle">
-              Merupakan suatu kehormatan dan kebahagiaan bagi kami
+              Suatu kehormatan dan kebahagiaan bagi kami
               <br>
               apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
               memberikan doa restu.
               <br>
               <br>
-              Jika bisa hadir kami tunggu konfirmasinya,
-              <br>
-              Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
+              Jika bisa hadir kami tunggu konfirmasinya, dengan mengklik tombol "Kabari Kami"
               <br>
               <br>
-              Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
+              Jika tidak memungkinkan untuk hadir di pernikahan kami, tidak mengapa,
               <br>
               semoga bisa berjumpa di lain kesempatan
               <br>
               <br>
-              Stay safe & jaga kesehatan ya :)
+              Stay safe & sehat selalu ya :)
             </p>
 
             <a href="https://api.whatsapp.com/send?phone=6289694209093&text=Hallo,%20Saya%20akan%20datang%20di%20acara%20pernikahan&source=&data="
@@ -463,20 +462,15 @@
   <!-- End Main Content -->
 
   <!-- Begin Footer -->
-  <!-- <div class="footer">
+  <div class="footer">
     <div class="container">
-      <a href="https://github.com/dickydoang/dicky-sherly-menikah" class="has-vertically-align">
-        <p class="has-vertically-align">2020 &copy dicky Muhammad Feisal</p>
-      </a>
-      <a href="https://bulma.io" class="has-vertically-align">
-        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
-      </a>
-      <a href="https://www.netlify.com">
-        <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify" />
+      <a href="https://instagram.com/hamhrmwn" class="has-vertically-align">
+        <p class="has-vertically-align">Created by</p>
+        <p class="has-vertically-align" style="color: peachpuff;">Ilham Nur Hermawan</p>
       </a>
     </div>
-  </div> -->
-  <!-- End Footer -->
+  </div>
+  <!-- End Footer
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -487,6 +481,18 @@
     AOS.init({
       easing: "ease-out",
       duration: 800,
+    });
+  </script>
+  <script src="js/jquery-sakura.min.js"></script>
+  <script>
+    // domReady
+    $(function () {
+      $('#home').sakura();
+    });
+
+    // windowLoad
+    $(window).load(function () {
+      $('#home').sakura();
     });
   </script>
 </body>
